@@ -1,0 +1,84 @@
+unmapAll
+
+" Hint operations
+map f  LinkHints.activateMode
+map F  LinkHints.activateModeToOpenInNewTab
+map mf LinkHints.activateModeWithQueue
+map gf LinkHints.activateModeToOpenInNewForegroundTab
+map gd LinkHints.activateModeToDownloadLink
+map I  LinkHints.activateModeToOpenIncognito
+map q  LinkHints.activateMode action=hover
+map Q  LinkHints.activateMode action=mouseout
+
+" Search
+map /  enterFindMode
+map n  performFind
+map N  performBackwardsFind
+
+" Visual mode, Caret mode and Copying
+map v  enterVisualMode
+map V  enterVisualLineMode
+map yy copyCurrentUrl
+map yf LinkHints.activateModeToCopyLinkUrl
+
+" Movement
+map h  scrollLeft
+map j  scrollDown
+map gg scrollToTop
+map l  scrollRight
+map d  scrollPageDown
+map e  scrollPageUp
+map u  scrollPageUp
+" map d  scrollFullPageDown
+" map e  scrollFullPageUp
+" map u  scrollFullPageUp
+map G  scrollToBottom
+map k  scrollUp
+
+" Tab management
+map J  previousTab
+map K  nextTab
+map g0 firstTab
+map g$ lastTab
+map U  lastTab
+map D  firstTab
+map r  reload
+map R  reload hard
+map H  goBack
+map L  goForward
+map x  removeTab
+map X  restoreTab
+map c  removeTab
+map C  restoreTab
+map t  Vomnibar.activateInNewTab
+map w  moveTabToNewWindow
+map mm Marks.activateCreateMode
+map gm Marks.activateGotoMode
+map <  moveTabLeft
+map >  moveTabRight
+
+" Deactivate shorcuts
+map i  enterInsertMode
+
+" Vomnibar
+map b  Vomnibar.activateBookmarks
+map B  Vomnibar.activateBookmarksInNewTab
+map T  Vomnibar.activateTabSelection
+map o  Vomnibar.activate
+map O Vomnibar.activateInNewTab
+map :  Vomnibar.activate
+map ,  Vomnibar.activateEditUrl
+
+" Miscellaneous
+map gi focusInput
+map g- goToRoot
+map g+ goUp
+map gu goUpUrl
+map gU goToRootUrl
+map gf nextFrame
+map gF mainFrame
+map M  toggleMuteTab
+map P  togglePinTab
+map <f1> createTab chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html
+
+map ?  showHelp
