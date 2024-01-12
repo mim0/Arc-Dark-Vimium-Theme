@@ -19,6 +19,7 @@ map N  performBackwardsFind
 map v  enterVisualMode
 map V  enterVisualLineMode
 map yy copyCurrentUrl
+map yY copyCurrentTitle
 map yf LinkHints.activateModeToCopyLinkUrl
 
 " Movement
@@ -36,16 +37,18 @@ map G  scrollToBottom
 map k  scrollUp
 
 " Tab management
-map J  previousTab
-map K  nextTab
+map H  previousTab
+map L  nextTab
 map g0 firstTab
 map g$ lastTab
 map U  lastTab
 map D  firstTab
 map r  reload
 map R  reload hard
-map H  goBack
-map L  goForward
+map gH  goBack
+map <backspace>  goBack
+map gL  goForward
+map <s-backspace>  goForward
 map x  removeTab
 map X  restoreTab
 map c  removeTab
