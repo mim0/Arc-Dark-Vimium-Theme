@@ -4,7 +4,7 @@ unmapAll
 map f  LinkHints.activateMode
 map F  LinkHints.activateModeToOpenInNewTab
 map mf LinkHints.activateModeWithQueue
-map gf LinkHints.activateModeToOpenInNewForegroundTab
+map gf LinkHints.activateModeWithQueue
 map gd LinkHints.activateModeToDownloadLink
 map I  LinkHints.activateModeToOpenIncognito
 map q  LinkHints.activateMode action=hover
@@ -19,7 +19,6 @@ map N  performBackwardsFind
 map v  enterVisualMode
 map V  enterVisualLineMode
 map yy copyCurrentUrl
-map yY copyCurrentTitle
 map yf LinkHints.activateModeToCopyLinkUrl
 
 " Movement
@@ -30,9 +29,6 @@ map l  scrollRight
 map d  scrollPageDown
 map e  scrollPageUp
 map u  scrollPageUp
-" map d  scrollFullPageDown
-" map e  scrollFullPageUp
-" map u  scrollFullPageUp
 map G  scrollToBottom
 map k  scrollUp
 
@@ -75,10 +71,6 @@ map ,  Vomnibar.activateEditUrl
 " Miscellaneous
 map gi focusInput
 map g- goToRoot
-map g+ goUp
-map gu goUpUrl
-map gU goToRootUrl
-map gf nextFrame
 map gF mainFrame
 map M  toggleMuteTab
 map P  togglePinTab

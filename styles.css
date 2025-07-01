@@ -36,14 +36,14 @@
 /* --------------------------------- CSS --------------------------------- */
 
 /* -------- HINTS -------- */
-#vimiumHintMarkerContainer div.internalVimiumHintMarker, #vimiumHintMarkerContainer div.vimiumHintMarker {
+#vimium-hint-marker-container div.internalVimiumHintMarker, #vimium-hint-marker-container div.vimiumHintMarker {
     background: var(--bg-hints);
     border: 1px solid var(--border-hints);
     box-shadow: var(--shadow);
     padding: 2px 3px;
 }
 
-#vimiumHintMarkerContainer div span {
+#vimium-hint-marker-container div span {
     color: var(--fg-hints);
     font-family: var(--font);
     font-size: var(--font-size-hints);
@@ -51,11 +51,11 @@
     text-shadow: none;
 }
 
-#vimiumHintMarkerContainer div > .matchingCharacter {
+#vimium-hint-marker-container div > .matchingCharacter {
     opacity: 0.3;
 }
 
-#vimiumHintMarkerContainer div > .matchingCharacter ~ span {
+#vimium-hint-marker-container div > .matchingCharacter ~ span {
     color: var(--fg-hints);
 }
 
