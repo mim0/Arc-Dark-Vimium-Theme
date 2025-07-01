@@ -69,7 +69,7 @@
     border: 1px solid var(--border)
 }
 
-#vomnibar .vomnibarSearchArea {
+#vomnibar .vomnibar-search-area {
     background: var(--bg-searcharea);
     padding: 0;
     border-bottom: 0;
@@ -100,7 +100,7 @@
     line-height: 1;
 }
 
-#vomnibar li .vomnibarTopHalf {
+#vomnibar li .top-half {
     font-size: var(--font-size);
     font-family: var(--font);
     font-weight: var(--font-weight-medium);
@@ -108,7 +108,7 @@
     padding: 0;
 }
 
-#vomnibar li .vomnibarBottomHalf {
+#vomnibar li .bottom-half {
     font-size: var(--font-size-url);
     font-family: var(--font);
     font-weight: var(--font-weight-medium);
@@ -116,30 +116,30 @@
     padding: 0;
 }
 
-#vomnibar li .vomnibarTopHalf {
+#vomnibar li .top-half {
     display: flex;
     flex: 0 0 67%;
     margin-right: 16px;
 }
 
-#vomnibar li .vomnibarBottomHalf {
+#vomnibar li .bottom-half {
     flex: 0 0 33%;
 }
 
-#vomnibar li .vomnibarSource.vomnibarNoInsertText,
-#vomnibar li .vomnibarSource.vomnibarInsertText {
+#vomnibar li .source.no-insert-text,
+#vomnibar li .source.no-insert-text {
     display: none;
 }
 
-#vomnibar li .vomnibarUrl {
+#vomnibar li .url {
     color: var(--fg-dark);
 }
 
-#vomnibar li .vomnibarSource {
+#vomnibar li .source {
     color: var(--fg-dark);
 }
 
-#vomnibar li .vomnibarSource {
+#vomnibar li .source {
     display: block;
     flex-shrink: 0;
     font-size: 12px;
@@ -149,12 +149,12 @@
     text-transform: uppercase;
 }
 
-#vomnibar li .vomnibarTitle,
-#vomnibar li .vomnibarUrl {
+#vomnibar li .title,
+#vomnibar li .url {
     line-height: 1.6;
 }
 
-#vomnibar li .vomnibarTitle {
+#vomnibar li .title {
     color: var(--fg);
     display: block;
     margin: 0;
@@ -163,7 +163,7 @@
     white-space: nowrap;
 }
 
-#vomnibar li .vomnibarUrl {
+#vomnibar li .url {
     padding-right: 6px;
     display: block;
     margin: 0;
@@ -172,30 +172,30 @@
     white-space: nowrap;
 }
 
-#vomnibar li .vomnibarMatch {
+#vomnibar li .match {
     color: inherit;
 }
 
-#vomnibar li .vomnibarTitle .vomnibarMatch {
+#vomnibar li .title .match {
     color: var(--fg-selected);
 }
 
-#vomnibar li.vomnibarSelected {
+#vomnibar li.selected {
     background: var(--bg-selected);
 }
 
-#vomnibar li.vomnibarSelected .vomnibarUrl,
-#vomnibar li.vomnibarSelected .vomnibarTitle,
-#vomnibar li.vomnibarSelected .vomnibarSource {
+#vomnibar li.selected .url,
+#vomnibar li.selected .title,
+#vomnibar li.selected .source {
     color: var(--fg);
 }
 
-#vomnibar li.vomnibarSelected .vomnibarMatch {
+#vomnibar li.selected .match {
     color: inherit;
 }
 
 /* -------- HUD & Search bar -------- */
-div.vimiumHUD {
+#hud {
     background: var(--bg);
     margin-bottom: 0.8rem;
     max-height: 1.9rem;
@@ -205,25 +205,31 @@ div.vimiumHUD {
     border: 1px solid var(--border);
 }
 
-div.vimiumHUD span#hud-find-input,
-div.vimiumHUD .vimiumHUDSearchAreaInner {
+#hud span#hud-find-input,
+#hud-container {
     color: var(--fg);
     font-family: var(--font);
     font-size: var(--font-size);
     font-weight: var(--font-weight-medium);
+    background-color: transparent;
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-medium);
+    border: none;
+    box-shadow: none;
 }
 
-div.vimiumHUD span#hud-find-input:before {
+#hud span#hud-find-input:before {
     content: none;
 }
 
-div.vimiumHUD .hud-find {
+#hud .hud-find {
     background-color: transparent;
     border: none;
 }
 
-div.vimiumHUD .vimiumHUDSearchArea {
-    background-color: transparent;
+#hud .search-area {
     padding-top: 3px;
     padding-bottom: 3px;
     padding-left: 5px;
